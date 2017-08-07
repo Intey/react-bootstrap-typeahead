@@ -7,12 +7,12 @@
     "example": "example"
   },
   "scripts": {
-    "build": "./scripts/build.sh",
-    "cleanup": "./scripts/cleanup.sh",
-    "example": "./scripts/buildExample.sh",
+    "cleanup": "bash scripts/cleanup.sh",
+    "build": "bash scripts/build.sh",
+    "example": "bash scripts/buildExample.sh",
     "lint": "eslint .",
     "prepublish": "npm run lint && npm test && npm run build",
-    "styles": "./scripts/buildStyles.sh",
+    "styles": "bash scripts/buildStyles.sh",
     "test": "karma start karma.conf.js"
   },
   "keywords": [
