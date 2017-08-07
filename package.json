@@ -7,11 +7,11 @@
     "example": "example"
   },
   "scripts": {
-    "build": "./scripts/build.sh",
-    "example": "./scripts/buildExample.sh",
+    "build": "bash scripts/build.sh",
+    "example": "bash scripts/buildExample.sh",
     "lint": "eslint .",
     "prepublish": "npm run lint && npm test && npm run build",
-    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+    "test": "karma start karma.conf.js"
   },
   "keywords": [
     "bootstrap",
