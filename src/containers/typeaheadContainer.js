@@ -351,6 +351,8 @@ function typeaheadContainer(Typeahead) {
       this._updateText(text);
 
       this.setState({initialItem: selection});
+
+      this.props.onSelected(selected);
     }
 
     _handleSelectionRemove = selection => {
@@ -488,6 +490,8 @@ function typeaheadContainer(Typeahead) {
      * DEPRECATED. Name attribute for the input.
      */
     name: deprecated(PropTypes.string, 'Use `inputProps` instead'),
+
+    onSelected: PropTypes.func,
     /**
      * Invoked when the input is blurred. Receives an event.
      */
@@ -577,6 +581,7 @@ function typeaheadContainer(Typeahead) {
     minLength: 0,
     multiple: false,
     onBlur: noop,
+    onSelected: noop,
     onChange: noop,
     onFocus: noop,
     onInputChange: noop,
