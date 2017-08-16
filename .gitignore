@@ -1,6 +1,5 @@
 .DS_Store
 css
-dist
 example/package-example.js
 lib
 node_modules
