@@ -1,6 +1,17 @@
+.babelrc
+.eslintignore
+.eslintrc
 .gitignore
 .npmignore
 .travis.yml
 
 CONTRIBUTING.md
 ISSUE_TEMPLATE.md
+karma.conf.js
+tests.webpack.js
+**/webpack.*.js
+
+example/
+scripts/
+src/
+test/
